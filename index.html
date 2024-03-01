@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi aplicación del clima</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style1.css">
+</head>
+<body>
+    <!-- <title>Hola</title> -->
+
+    <div class="contenedores">
+        <div class="contenedor1">
+            
+            <div class="clima">
+                <img src="imagenes/Logo.svg" alt="logoClima" width="100" height="50">
+            </div>
+
+            <!-- AGREGAR UNA CIUDAD: -->
+
+            
+            <section class="top-banner">
+                <div class="container">
+                    <h1 class="heading">AGREGAR UNA CIUDAD</h1>
+                    <form>
+                        <div class="entrada">
+                            <input type="text" placeholder="NOMBRE DE LA CIUDAD..." autofocus>
+                        </div>
+
+                        <br>
+                        
+                        <button type="submit">AÑADIR</button>
+                        
+                        
+                        
+                        <span class="msg"></span>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+
+        
+        <div class="contenedor2">
+
+            <div class="ListaClima">
+                <div class="Titulos">
+                    <b class="todos">
+                        Todos
+                    </b>
+                        <br>
+                    <b class="climas_tus">
+                        tus climas
+                    </b>
+                </div>
+            
+                <div class="Buscador">
+                    <input type="text" placeholder="Buscar...">
+                
+                </div>
+            </div>
+                    
+            <div class="api">
+               
+            </div>
+            
+            
+            <section class="ajax-section">
+                <div class="container">
+                    <ul class="cities"></ul>
+
+
+                </div>
+            </section>
+            
+            <footer class="page-footer">
+                <div class="container">
+                    <small>
+                        Clima Rodrigo AJB <span>©</span> 
+                    </small>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="./scripts/script.js"></script>    
+</body>
+</html>

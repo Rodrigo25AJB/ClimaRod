@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.ttf') format('truetype'); 
+    font-weight: 100;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype'); 
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita el desbordamiento del fondo */
+    background-image: url('../assets/bgh.svg');
+    background-size: cover; 
+
+}
+
+.contenedores {
+    display: flex;
+}
+
+.contenedor1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 400px; 
+    height: 700px;
+
+    background-color:rgba(0, 48, 96, 0.7);
+    /* border: 2px solid rgba(255, 255, 255, 0.2); */
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: aliceblue;
+    
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+/*.clima .svg {
+    margin: 0 auto;
+    width: 20px;
+    height: px;
+}
+*/
+/* .contenedor1 .entrada{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+} */
+
+.entrada input {
+    width: 70%;
+    height: 30px;
+    background-color: rgb(14,134,212);
+    border: none;
+    outline: none;
+    border: 2px solid rgb(14, 134, 212);
+    border-radius: 20px;
+    font-size: 16px;
+    color:aliceblue;
+    opacity: 0.5;
+    padding: 20px 45px 20px 20px;
+}
+
+.entrada input::placeholder{
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+button {
+    font-weight: bold;
+    border: none;
+    border: 2px solid rgb(104, 187, 227);;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: rgb(104, 187, 227);
+    width: 90%; 
+    height: 80px;
+    font-size: 17px; 
+    /* padding: 20px 45px 20px 45px; */
+    outline: none;
+    color: #000000;
+    /* margin-top: 10px;  */
+}
+
+
+button:hover,
+button:focus {
+    background-color: #2649bbaf ; 
+    border-color: #2649bbaf;
+}
+
+
+
+
+
+.clima {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clima img {
+    height: 55%;
+    width: 150%;
+}
+
+.contenedor2 {
+    margin: 10px;
+    padding: 10px;
+    /* text-align: center; */
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+.ListaClima{
+  margin: 10px;
+  padding: 10px;
+  /* text-align:left; */
+  /* flex-grow: 1; */
+  background-color: white;
+  border-radius: 2%;
+  display: flex;
+
+}
+
+.ListaClima .todos{
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(0, 48, 96, 0.7);
+}
+
+.ListaClima .climas_tus{
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 48, 96, 0.7);
+}
+
+
+.ListaClima .Buscador {
+  position: relative;
+  /* right: 0; */
+  left: 55%;
+}
+
+.ListaClima .Buscador input{
+  /* position: relative; */
+  font-size: 30px;
+  /* position:relative; */
+  border-radius: 10px;
+  border: transparent;
+  /* position: relative;
+  right: auto; */
+}
+
+/* .Buscador input{ */
+  /* position: relative; */
+  /* left:20px; Ajusta el valor según tu necesidad */
+/* } */
+
+/*
+background-color: white;
+background: linear-gradient(#fefefe,#888);
+background: linear-gradient(#0771e9,#1f92f0);*/
+
+.ajax-section {
+    margin: 70px 0 20px;
+    /* background: linear-gradient(#0771e9,#4c8fc5); */
+    background-color: transparent;
+    border-radius: 2%;
+  }
+  
+  /* .ajax-section .cities { */
+    /* display: grid; */
+    /* grid-gap: 32px 20px; */
+    /* grid-template-columns: repeat(4, 1fr); */
+  /* } */
+  /* .city li{
+    background-color: white;
+  } */
+
+  .ajax-section .city {
+    /* position: relative; */
+    display: flex;
+    padding: 40px 10%;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(2,71,126), rgb(69,166,221));
+    color: white;
+    font-size: 25px;
+  }
+  
+  .ajax-section .city::after {
+    content: '';
+    width: 50%;
+    height: 30px;
+    position: absolute;
+    bottom: -12px;
+    /* left: 5%; */
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 20px;
+    background: white;
+    /* background-color: #263b80af; */
+  }
+  
+  .ajax-section figcaption {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .ajax-section .city-temp {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .ajax-section .city sup {
+    font-size: 0.5em;
+  }
+  
+  .ajax-section .city-name sup {
+    padding: 0.2em 0.6em;
+    border-radius: 30px;
+    color: white;
+    background: var(--orange);
+    /* font-size: 30px; */
+    
+  }
+  
+  .ajax-section .city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    
+  }
+
+  .posicion{
+    position: relative;
+    left: 20%;
+  }
